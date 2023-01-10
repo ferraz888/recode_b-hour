@@ -1,0 +1,307 @@
+body{
+    min-width: 380px;
+    margin: 0%;
+    padding-right: 0%;
+    justify-content: center   ;
+}
+
+header{
+    background-color: rgb(28,56,184);
+}
+
+
+/* style navbar*/
+nav{
+    padding: none;
+    margin: none;
+    position: fixed;
+    z-index: 10;
+    background-color:rgb(28,56,184);
+}
+
+.navlink{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.navitem{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    text-align: center;
+}
+.navitem:hover{
+    color: aliceblue;
+    animation: backgroudchange 0.5s ;
+    animation-fill-mode: forwards;
+}
+
+.navcategorie{
+    color: aliceblue;
+    width: 100%;
+    text-transform: uppercase;
+}
+.navcategorie:hover{
+    animation: backgroudchange 0.5s ;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+}
+
+
+/* section presentation*/
+.presentation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo_ffb{
+    margin-top: 10em;
+    width: 50%;
+    align-self: center;
+}
+
+h1{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-transform: uppercase;
+}
+
+h5{
+    text-transform: uppercase;
+}
+
+.desciption_consept{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* trensition */
+
+.fa-arrow-down{
+    margin-top: 5%;
+    margin-left: 50%;
+    margin-right: 50%;
+    color: black;
+    font-size: 49px;
+    
+}
+
+.fa-arrow-down:hover{
+    animation: flechbounce 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+/* next tournament*/
+.title_section{
+    display: block;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    text-transform: uppercase;
+}
+
+.img_city{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+figcaption{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* club */
+
+.club_part{
+    margin-top: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+    background-color: rgb(28,56,184);
+}
+.club_tournament{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.separateur_club_tournament{
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 40%;
+    margin-top: 10%;
+}
+
+.tournament_club_desc{
+    margin-top: 7%;
+    color: #fff;
+}
+
+.button_club{
+    width: 9em;
+    height: 2em;
+    background-color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 5%;
+    border: solid 2px black;
+    color: black;
+    
+}
+
+.button_club:hover{
+    animation: border 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/*classement */
+
+.classement_part{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.classement{
+    text-transform: uppercase;
+}
+
+.classement_desc{
+    margin-top: 7%;
+}
+
+.separateur_classement{
+    background-color: rgb(0, 0, 0);
+    height: 1px;
+    width: 40%;
+    margin-top: 10%;
+}
+
+.button_classement{
+    width: 11em;
+    height: 2em;
+    background-color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 5%;
+    border: solid 2px black;
+    color: black;
+}
+
+.button_classement:hover{
+    animation: border 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/*tournament*/
+
+.tournamente_part{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+    background-color: rgb(110, 18, 18);
+}
+
+.button_tournament{
+    width: 10em;
+    height: 2em;
+    background-color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 5%;
+    border: solid 2px black;
+    color: black;
+}
+
+.button_tournament:hover{
+    animation: border 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/*info supplementaire*/
+
+.more_info{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: -1px 7px 10px 3px rgba(0,0,0,0.45);
+    display: grid;
+    grid-template-rows: [a] 1fr [b] 1fr [c];
+}
+
+.reportage{
+    grid-row: a / b;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+}
+
+.image_more_info{
+    grid-row: a / b;
+    width: 100%;
+    height: 100%;
+}
+
+.description{
+    grid-row: b / c;
+    display: flex;
+    flex-direction: column;
+}
+
+.title_more_info{
+    font-size: 20.5px;
+}
+
+.date_more_info{
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/*RESPONCIVE*/
+@media only screen and (min-width: 800px){
+    body{max-width: 100%; max-height: 100%;}
+    
+    
+    .info{display: grid; grid-template-columns:[a] 1fr [b] 1fr [c] 1fr [d]; margin-top: 15%; width: 100%;}
+    .club_part{grid-column: a / b; margin-top: 0%;}
+    .classement_part{grid-column: b / c;}
+    .tournamente_part{grid-column: c / d;}
+
+    .news{display: grid; grid-template-columns:[a] 1fr [b] 1fr [c] 1fr [d]; align-self: center;}
+    .more_info1{grid-column: a / b;}
+    .more_info2{grid-column: b / c;}
+    .more_info3{grid-column: c / d;}
+}
+
+@keyframes flechbounce {
+    from { transform: translate3d(0, 0, 0);}
+    to { transform: translate3d(0, -50px, 0);}
+}
+
+@keyframes border {
+    from { }
+    to { width: 100%;}
+}
+
+@keyframes backgroudchange {
+    from { }
+    to { background-color: #fff; color: black;}
+}
