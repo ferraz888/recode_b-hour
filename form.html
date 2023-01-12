@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheet/styleform.css" rel="stylesheet">
+    <title>combatmedieval</title>
+</head>
+<body>
+    <header>
+        <header>
+            <nav class="container-fluid ">
+                <img src="img\behourd-logo.webp" alt="behourd" class="row">
+                <ul class="navlink row container-fluid" >
+                    <li class="col navitem">
+                        <a href="index.html" class="navcategorie">behourd</a>
+                    </li>
+                    <li class="col navitem">
+                        <a href="#" class="navcategorie">evenement</a>
+                    </li>
+                    <li class="col navitem">
+                        <a href="club.html" class="navcategorie">club</a>
+                    </li>
+                    <li class="col navitem">
+                        <a href="form.html" class="navcategorie">adhésion</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <img src="img/1200x680_armure_lundi_07.jpg" alt="background" class="background">
+            <form>
+                <h3 class="title_form">Adhésion</h3>
+                <div class="info">
+                    <h5 class="SAS">Inscription Béhour</h5>
+                    <p class="tel">Tel: +33 6 44 62 38 66</p>
+                </div>
+                <div class="input_type_info">
+                    <input placeholder="Nom" class="input_form">
+                    <input placeholder="Email" class="input_form">
+                    <input placeholder="Sujet" class="input_form">
+                    <input placeholder="Ville" list="club" class="input_form">
+                    <datalist id="club">
+                        <option value="Paris"></option>
+                        <option value="Lille"></option>
+                        <option value="Lyon"></option>
+                        <option value="Marseille"></option>
+                        <option value="Toulouse"></option>
+                    </datalist>
+                    <button type="button" value="user_message" class="input_form send">Send request</button>
+                </div>
+            </form>
+        </main>
+    
+</body>
+</html>

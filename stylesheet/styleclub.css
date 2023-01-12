@@ -1,0 +1,113 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    background-color: rgb(4, 4, 57);
+}
+
+header{
+    background-color: rgb(4, 4, 57);
+}
+
+
+/* style navbar*/
+nav{
+    padding: none;
+    margin: none;
+    position: fixed;
+    z-index: 10;
+    background-color:rgb(4, 4, 57);
+}
+
+.navlink{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.navitem{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    text-align: center;
+}
+.navitem:hover{
+    color: aliceblue;
+    animation: backgroudchange 0.5s ;
+    animation-fill-mode: forwards;
+}
+
+.navcategorie{
+    color: aliceblue;
+    width: 100%;
+    text-transform: uppercase;
+}
+.navcategorie:hover{
+    animation: backgroudchange 0.5s ;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+}
+
+/*body*/
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.regionfirst{
+    margin-top: 40%;
+    width: 100%;
+}
+
+.region{
+    text-align: center;
+    background-color: rgb(102, 27, 27); 
+    border-top: solid 2px rgb(255, 255, 255);
+    border-bottom: solid 2px rgb(255, 255, 255);
+}
+
+h2{
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+    padding: 2px;
+    display: grid;
+    grid-template-rows: [a] 1fr [b] 1fr [c] 1fr [d];
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.imgclub{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.imgclub:hover{
+    
+    animation: imgcolor 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/*RESPONCIVE*/
+@media only screen and (min-width: 380px){
+    body{max-width: 100%; max-height: 100%;}
+}
+
+@media only screen and (min-width: 800px){
+    body{max-width: 100%; max-height: 100%;}
+    ul{grid-template-columns: [a] 1fr [b] 1fr [c] 1fr [d]; grid-template-rows: none;}
+    .regionfirst{margin-top: 12%;}
+}
+
+@keyframes imgcolor {
+    from { }
+    to { box-shadow: 0px 0px 20px rgb(223, 240, 69);}}
+
+@keyframes backgroudchange {
+        from { }
+        to { background-color: #fff; color: black;}}
+}
